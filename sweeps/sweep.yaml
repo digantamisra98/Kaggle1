@@ -1,0 +1,14 @@
+program: train_xgboost.py
+method: bayes
+metric:
+  name: Accuracy
+  goal: maximize
+parameters:
+  max_depth:
+    values: [10,20,30,40,50,60]
+  alpha:
+    values: [30,40,50,60,70,80,90,100]
+  learning_rate:
+    values: [0.01,0.05,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1]
+  n_estimators:
+    values: [100,200,300,400,500,600,700,800,900,1000]
